@@ -1,0 +1,7 @@
+{
+    "hostname": "localhost",
+    "username": "root",
+    "password": null,
+    "porta": "3306",
+    "database": "locadora_carros"
+}
