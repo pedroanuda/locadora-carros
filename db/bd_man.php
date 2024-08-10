@@ -1,7 +1,7 @@
 <?php
 if (session_status() != PHP_SESSION_ACTIVE) session_start();
 
-$dbInfos = json_decode(file_get_contents("./config.json"), true);
+$dbInfos = json_decode(file_get_contents("http://" . $_SERVER['HTTP_HOST'] . "/locadora_carros/db/config.json"), true);
 
 function conectar_db(): mysqli {
     $conn = mysqli_connect(
